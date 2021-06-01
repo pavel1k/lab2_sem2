@@ -10,7 +10,7 @@
 
 #include "Queue.hpp"
 #include "Stack.hpp"
-#include "Deck.hpp"
+#include "Deque.hpp"
 
 
 
@@ -273,13 +273,13 @@ void testStack()
     assert_equal(s2.size(), 0);
 }
 
-void testDeck()
+void testDeque()
 {
     int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     //forward constructor
-    Deck<int> d1(a, 10);
-    Deck<int> d2(a, a+10);
+    Deque<int> d1(a, 10);
+    Deque<int> d2(a, a + 10);
 
     for(size_t i = 0; i < 10; ++i)
         assert_equal(d1.popRight(), d2.popRight());

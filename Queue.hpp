@@ -2,19 +2,19 @@
 #define QUEUE_HPP
 
 
-#include "ListSequence.hpp"
+#include "Deque.hpp"
 
 template <typename T>
 class Queue {
 public:
-    Queue() : _list(new ListSequence<T>){}
+    Queue() : _list(new Deque<T>){}
 
     template <typename ...Args>
-    Queue(Args&&... args) : _list(new ListSequence<T>(std::forward<Args>(args)...)) {}
+    Queue(Args&&... args) : _list(new Deque<T>(std::forward<Args>(args)...)) {}
 
-    void push(const T &val) {_list->append(val);}
-
-    T& back() {return _list->getLast();};
+    void push(const T &val) {_list->pushRight(val);}
+    T pop() {_list->popLeft();}
+   /* T& back() {return _list->getLast();};
     const T& back() const {return _list->getLast();}
 
     T& front() {return _list->getFirst();};
@@ -24,16 +24,16 @@ public:
     void erase(size_t from, size_t to) {_list->erase(from, to);}
     T pop();
 
-
+*/
     bool empty() {return _list->size() == 0;}
     size_t size() {return _list->size();}
 
 private:
-    ListSequence<T> *_list;
+    Deque<T> *_list;
 };
 
 
-
+/*
 template<typename T>
 T Queue<T>::pop()
 {
@@ -41,7 +41,7 @@ T Queue<T>::pop()
     erase(0);
     return ret;
 }
-
+*/
 
 
 
