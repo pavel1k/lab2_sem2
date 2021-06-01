@@ -26,16 +26,16 @@ void Menu(){
     int a, b, c, d, f;
     float t;
     double s;
-    cout << "choose type of structure:" << endl << "1 - int" << endl << "2 - float" << endl << "3 - double";
+    cout << "choose type of structure:" << endl << "1 - int" << endl << "2 - float" << endl << "3 - double" << endl;
     cin >> a;
     switch(a){
         case 1:
-            cout << "choose structure:" << endl << "1 - deque" << endl << "2 - stack" << endl << "3 - queue";
+            cout << "choose structure:" << endl << "1 - deque" << endl << "2 - stack" << endl << "3 - queue" << endl;
             cin >> b;
             switch(b) {
                 case 1:
 
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -44,7 +44,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout <<"choose functions" << endl << "1 - push into the left side" << endl << "2 - push into the left side"<< endl << "3 - pop from the left side" << endl << "4 - pop from the right side" << endl << "5 - exit";
+                        cout <<"choose functions" << endl << "1 - push into the left side" << endl << "2 - push into the left side"<< endl << "3 - pop from the left side" << endl << "4 - pop from the right side" << endl << "5 - exit" << endl;
                         cin >> c;
                         if (c == 5) break;
                         switch (c) {
@@ -60,11 +60,11 @@ void Menu(){
                                 break;
                             case 3:
                                 f = DequeInt.popLeft();
-                                cout << f;
+                                cout << f << endl;
                                 break;
                             case 4:
                                 f = DequeInt.popRight();
-                                cout << f;
+                                cout << f << endl;
                                 break;
                             default:
                                 break;
@@ -72,7 +72,7 @@ void Menu(){
                     }
                     break;
                 case 2:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -81,7 +81,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit";
+                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit" << endl;
                         cin >> c;
                         if (c == 3) break;
                         switch (c) {
@@ -92,7 +92,7 @@ void Menu(){
                                 break;
                             case 2:
                                 f = StackInt.pop();
-                                cout << f;
+                                cout << f << endl;
                                 break;
                             default:
                                 break;
@@ -100,7 +100,7 @@ void Menu(){
                     }
                     break;
                 case 3:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl ;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -109,7 +109,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit";
+                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit" << endl ;
                         cin >> c;
                         if (c == 3) break;
                         switch (c) {
@@ -120,7 +120,7 @@ void Menu(){
                                 break;
                             case 2:
                                 f = QueueInt.pop();
-                                cout << f;
+                                cout << f << endl;
                                 break;
                              default:
                                 break;
@@ -132,11 +132,11 @@ void Menu(){
             }
             break;
         case 2:
-            cout << "choose structure:" << endl << "1 - deque" << endl << "2 - stack" << endl << "3 - queue";
+            cout << "choose structure:" << endl << "1 - deque" << endl << "2 - stack" << endl << "3 - queue" << endl ;
             cin >> b;
             switch (b) {
                 case 1:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -145,7 +145,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push into the left side" << endl << "2 - push into the left side"<< endl << "3 - pop from the left side" << endl << "4 - pop from the right side" << endl << "5 - exit";
+                        cout << "choose functions" << endl << "1 - push into the left side" << endl << "2 - push into the left side"<< endl << "3 - pop from the left side" << endl << "4 - pop from the right side" << endl << "5 - exit" << endl;
                         cin >> c;
                         if (c == 5) break;
                         switch (c) {
@@ -161,11 +161,11 @@ void Menu(){
                                 break;
                             case 3:
                                 t = DequeFloat.popLeft();
-                                cout << t;
+                                cout << t << endl;
                                 break;
                             case 4:
                                 t = DequeFloat.popRight();
-                                cout << t;
+                                cout << t << endl;
                                 break;
                              default:
                                 break;
@@ -173,7 +173,7 @@ void Menu(){
                     }
                     break;
                 case 2:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -182,7 +182,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit";
+                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit" << endl;
                         cin >> c;
                         if (c == 3) break;
                         switch (c) {
@@ -193,7 +193,7 @@ void Menu(){
                                 break;
                             case 2:
                                 t = StackFloat.pop();
-                                cout << t;
+                                cout << t << endl;
                                 break;
                             default:
                                 break;
@@ -201,7 +201,7 @@ void Menu(){
                     }
                     break;
                 case 3:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl ;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -210,7 +210,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit";
+                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit" << endl;
                         cin >> c;
                         if (c == 3) break;
                         switch (c) {
@@ -221,7 +221,7 @@ void Menu(){
                                 break;
                             case 2:
                                 t = QueueFloat.pop();
-                                cout << t;
+                                cout << t << endl;
                                 break;
                             default:
                                 break;
@@ -233,11 +233,11 @@ void Menu(){
             }
             break;
         case 3:
-            cout << "choose structure:" << endl << "1 - deque" << endl << "2 - stack" << endl << "3 - queue";
+            cout << "choose structure:" << endl << "1 - deque" << endl << "2 - stack" << endl << "3 - queue" << endl;
             cin >> b;
             switch(b) {
                 case 1:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -246,7 +246,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push into the left side" << endl << "2 - push into the left side"<< endl << "3 - pop from the left side" << endl << "4 - pop from the right side" << endl << "5 - exit";
+                        cout << "choose functions" << endl << "1 - push into the left side" << endl << "2 - push into the left side"<< endl << "3 - pop from the left side" << endl << "4 - pop from the right side" << endl << "5 - exit" << endl;
                         cin >> c;
                         if (c == 5) break;
                         switch (c) {
@@ -262,11 +262,11 @@ void Menu(){
                                 break;
                             case 3:
                                 s = DequeDouble.popLeft();
-                                cout << s;
+                                cout << s << endl;
                                 break;
                             case 4:
                                 s = DequeDouble.popRight();
-                                cout << s;
+                                cout << s << endl;
                                 break;
                             default:
                                 break;
@@ -274,7 +274,7 @@ void Menu(){
                     }
                     break;
                 case 2:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -283,7 +283,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit";
+                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << endl << "3 - exit" << endl;
                         cin >> c;
                         if (c == 3) break;
                         switch (c) {
@@ -294,7 +294,7 @@ void Menu(){
                                 break;
                             case 2:
                                 s = StackDouble.pop();
-                                cout << s;
+                                cout << s << endl;
                                 break;
                             default:
                                 break;
@@ -302,7 +302,7 @@ void Menu(){
                     }
                     break;
                 case 3:
-                    cout << "input amount of elements";
+                    cout << "input amount of elements" << endl;
                     cin >> d;
                     for (size_t i = 0; i < d; ++i) {
                         cout << "input element: ";
@@ -311,7 +311,7 @@ void Menu(){
                     }
 
                     while(true) {
-                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << "3 - exit";
+                        cout << "choose functions" << endl << "1 - push" << endl << "2 - pop" << "3 - exit" << endl;
                         cin >> c;
                         if (c == 3) break;
                         switch (c) {
@@ -322,7 +322,7 @@ void Menu(){
                                 break;
                             case 2:
                                 s = QueueDouble.pop();
-                                cout << s;
+                                cout << s << endl;
                                 break;
                             default:
                                 break;
